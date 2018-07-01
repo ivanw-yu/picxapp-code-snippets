@@ -1,0 +1,647 @@
+/* navbar styles
+  <nav>
+    <a>...</a>
+    ...
+  </nav>
+*/
+body{
+  margin: 0;
+  font-family: 'Nanum Gothic', 'Libre Baskerville', sans-serif !important;
+}
+
+.root{
+  padding: 0;
+}
+
+.row{
+  width: 100%;
+  margin: 0 !important;
+}
+
+.container-fluid{
+  padding: 0 !important;
+  margin: 0;
+}
+
+/* NavBar */
+.nav {
+  float: left;
+  width: 100%;
+  margin: 0 0 20px 0;
+  box-shadow: 0 5px 8px #888888;
+  padding: 0;
+  max-width: 100% !important;
+}
+
+.nav a, .nav button{
+  float: left;
+  padding: 30px;
+  text-decoration: none;
+  color: white;
+  /*line-height: inherit;*/
+}
+
+.nav button{
+  background-color: #ff9900;
+  border-color: #ff9900;
+}
+.nav a:hover, .nav a:focus{
+  text-decoration: none;
+  color: white;
+}
+
+.nav a:hover, .nav button:hover{
+  background-color: #f48342;
+}
+
+.nav-right{
+  float: right;
+}
+
+.nav-left{
+  float: left;
+}
+
+.nav-active{
+  background-color: #f48342;
+  text-decoration: none;
+}
+
+.search-bar{
+  width: 400px;
+  box-sizing: border-box;
+  padding: 20px 10px 10px 10px;
+}
+.search-bar-form{
+  height: 100%;
+}
+
+select.category-dropdown{
+  float: left;
+  background-color: red;
+  border: none;
+  border-radius: 2px;
+  height: 35px;
+  -moz-appearance: none;
+}
+
+.keyword-input{
+  float: left;
+  height: 50px;
+  width: 300px !important;
+}
+
+
+/* Consistent theme and styles for application elements*/
+
+.theme{
+  background-color: #ff9900;
+  color: white;
+}
+
+
+.active{
+  background-color: #e68a00;
+}
+
+.shadow-box{
+    box-shadow: 3px 3px 3px #cccccc;
+    border: 1px solid #f2f2f2;
+    padding: 30px;
+}
+
+/* Photo */
+
+.photo{
+  width: 100%;
+  height: 100%;
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+   -moz-animation: fadein 2s; /* Firefox < 16 */
+    -ms-animation: fadein 2s; /* Internet Explorer */
+     -o-animation: fadein 2s; /* Opera < 12.1 */
+        animation: fadein 2s;
+  opacity: 1;
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.photo:hover{
+  opacity: .5;
+  cursor: pointer;
+}
+
+.photo-box{
+  height: 190px;
+  margin: 10px 0 10px 0;
+}
+
+.search-photos-result-header{
+    margin: 100px 15px 0 15px;
+}
+
+/* dashboard */
+
+ul.dashboard-side-nav{
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+ul.dashboard-side-nav:after{
+  content: '';
+  clear: both;
+}
+
+ul.dashboard-side-nav li{
+  text-align: center;
+  width: 100%;
+  background-color: #f2f2f2;
+  text-decoration: none;
+  padding: 0;
+  color: white;
+  height: 60px;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+}
+
+ul.dashboard-side-nav li > a{
+  display: block; /*this allows anchor tag to fit into entire containing element*/
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  line-height: 60px;
+  color: black;
+}
+
+ul.dashboard-side-nav li > a:hover{
+  text-decoration: none;
+  cursor: pointer;
+  background-color: grey;
+}
+
+div.dashboard-content-area{
+  float: left;
+  box-sizing: border-box;
+  padding: 30px;
+  width: 75%;
+}
+
+.user-info{
+    text-align: center;
+    box-shadow: 3px 3px 3px #cccccc;
+    border: 1px solid #f2f2f2;
+    padding: 30px;
+    margin: 20px 0 20px 0;
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+     -moz-animation: fadein 2s; /* Firefox < 16 */
+      -ms-animation: fadein 2s; /* Internet Explorer */
+       -o-animation: fadein 2s; /* Opera < 12.1 */
+          animation: fadein 2s;
+}
+
+.user-info:hover{
+  opacity: .5;
+  cursor: pointer;
+}
+
+
+.photo-view-background{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(5,5,5, 0.5);
+  z-index: 1;
+}
+
+.photo-view-layout{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height:100%;
+  padding: 50px 150px 150px 150px;
+  overflow: scroll;
+}
+
+.photo-view{
+  width: 100%;
+  background-color: white;
+}
+
+.photo-view-image{
+  width: 100%;
+  height: 500px;
+}
+
+.photo-view-image img{
+  width: 100%;
+  height: 500px;
+  margin: 0;
+}
+
+.photo-view-details{
+  background-color: white;
+  text-align: left !important;
+  padding-left: 10px !important;
+  padding-bottom: 20px;
+  box-shadow: 0 5px 8px #888888;
+}
+
+.photo-view-details *{
+  margin: 0;
+}
+
+.photo-view-detail-and-comments{
+  text-align: left;
+}
+
+.photo-view-comments{
+  border-radius: 10px;
+  border-bottom: 1px solid #e6e6e6;
+  overflow-y: scroll;
+  height: 150px;
+}
+
+.photo-comment-form{
+  padding: 20px;
+}
+
+.photo-comment-form-locked{
+  padding: 50px;
+  text-align: center;
+}
+
+.exit-photo-view-button{
+  position:fixed;
+  top:5px;
+  right: 15px;
+  background-color: rgba(5,5,5,0);
+  border: none;
+  padding: 0;
+}
+
+.exit-photo-view-button .glyphicon{
+  font-size: 30px;
+}
+
+.exit-photo-view-button:hover{
+  cursor: pointer;
+}
+
+.photos-navigation-button-area{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: rgba(5,5,5,.2);
+  text-align: center;
+  padding-top: 30px;
+  position: fixed;
+  bottom: 0;
+  left: 10px;
+}
+
+.photos-navigation-button-area .glyphicon{
+  background-color: rgba(5,5,5,0);
+  font-size: 25px;
+  border: none;
+}
+
+.photos-navigation-button-area button:focus{
+  outline: none;
+}
+
+.photos-navigation-button-area button:hover{
+  opacity: .75;
+}
+
+.photos-navigation-button-area .glyphicon-chevron-left{
+  border-right: 1px solid black;
+}
+.photos-navigation-button-area .glyphicon-chevron-right{
+  border-left: 1px solid black;
+}
+
+.profile-edit-mode-button{
+  font-size: 25px;
+  float: right;
+}
+.profile-edit-mode-button-area{
+  width: 100%;
+  height: 30px;
+}
+
+.profile-edit-box{
+  padding-top: 10px;
+}
+
+.home-jumbotron{
+  width: 100%;
+  height: 400px;
+  box-shadow: 0 5px 8px #888888;
+  text-align: center;
+  background-image: url('./assets/home-page-pic.jpeg');
+  background-size: 100% 100%;
+  color: white;
+}
+
+.home-header{
+  /* width: 400px;
+  height: 400px;
+  border-radius: 50%; */
+  width: 100%;
+  height: 100%;
+  background-color: rgba(5,5,5,.5);
+  text-align: center;
+  padding: 40px;
+}
+
+.home-title{
+  width: 200px;
+  margin: 20px auto;
+  border-bottom: 1px solid white;
+}
+.home-photos-background{
+  padding: 40px;
+}
+.home-photos{
+  border: 1px solid #ff9900;
+  padding: 50px;
+}
+
+.footer{
+  background-color: #ff9900;
+  text-align: center;
+  padding: 40px;
+  color: white;
+  font-size: 34px;
+  margin-top: 70px;
+}
+
+.profile-picture{
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  margin-right: 20px;
+}
+
+span.profile-picture{
+  text-align: center;
+  padding-top: 22.5px;
+  font-size: 126.5px;
+  border: 1px solid black;
+  overflow: hidden;
+}
+
+.profile-header-area{
+  border-bottom: 1px solid #e2e2e2;
+  padding-bottom: 40px;
+}
+
+.profile-header{
+  padding: 40px 40px 40px 0;
+  text-align: left;
+}
+
+.delete-button-div{
+  position: relative;
+}
+
+.delete-button-div .open-delete-form-button{
+  display: none;
+  position:absolute;
+  top: 10px;
+  right: 15px;
+  z-index: 4;
+}
+
+.delete-button-div:hover .open-delete-form-button{
+  display: block;
+  background-color: rgba(5,5,5,.5);
+  border: none;
+}
+
+.delete-form{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.photo-delete-form{
+  margin: auto;
+  background-color: white;
+  width:100%;
+  padding: 50px;
+}
+
+[id^='photo-delete-form-background']{
+  position: fixed;
+  top:0;
+  left:0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(5,5,5,.5);
+  padding: 100px 15px 0 15px;
+  text-align: center;
+  z-index: 5;
+  /* display: none; */
+}
+
+.comment-delete-button{
+  display: inline;
+  background-color: rgba(5,5,5,.1);
+  border: none;
+  margin-left: 5px;
+}
+
+.comment-delete-button:hover{
+  background-color: rgba(5,5,5,.5);
+}
+
+.flash-message-div{
+  width: 100%;
+  position: fixed;
+  text-align: center;
+  z-index: 10;
+  padding: 0 15px;
+}
+.error-message, .success-message{
+  color: white;
+  height: 100px;
+  border-radius: 5px;
+  padding:25px;
+}
+
+.success-message{
+  background-color: green;
+}
+
+.error-message{
+  background-color: red;
+}
+
+#errorMessage{
+  color: red;
+}
+/* @media only screen and (max-width: 767px){
+  .col-sm-4{
+    width: 25%;
+  }
+} */
+
+@media only screen and (max-width: 755px){
+  .nav a, .nav button{
+    width: inherit;
+    text-align: center;
+  }
+
+  .register-form{
+    margin-top: 175px;
+  }
+
+  .login-form{
+    margin-top: 75px;
+  }
+
+  .delete-button-div .open-delete-form-button{
+    top: 0;
+  }
+
+  .col-sm-4{
+    width: 25%;
+    margin: 0;
+  }
+
+  .photo-box{
+    height: 100px;
+  }
+
+  /* .nav .nav-left, .nav .nav-right{
+    width: 50%;
+  } */
+}
+
+@media only screen and (max-width: 650px){
+  .photos-navigation-button-area{
+    width: 75px;
+    height: 75px;
+    padding-top: 25px;
+    top:0;
+    position: absolute;
+  }
+
+  .photos-navigation-button-area .glyphicon{
+    font-size: 15px;
+  }
+
+  .photo-view-layout{
+    padding: 80px 10px 50px 10px;
+  }
+
+  .photo-header{
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 640px){
+  .nav-left, .nav-right{
+    width: inherit;
+  }
+
+  .nav-right a, .nav-right button{
+    width: 50% !important;
+  }
+}
+
+@media only screen and (max-width: 390px){
+  .search-bar{
+    width: 100%;
+  }
+
+  .keyword-input{
+    width: 200px !important;
+  }
+}
+
+@media only screen and (max-width: 360px){
+
+
+  .home-photos, .home-photos-background{
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 290px){
+
+  .keyword-input{
+    width: 150px !important;
+  }
+
+  .category-dropdown{
+    font-size: 12px;
+  }
+
+  .home-header{
+    font-size: 7px;
+  }
+
+  .home-header button{
+    font-size: 10px;
+    padding: 5px;
+  }
+
+  .home-title{
+    width: 100px;
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 240px){
+  .nav-right a, .nav-right button{
+    width: 50% !important;
+  }
+
+  .keyword-input{
+    width: 80px;
+  }
+  .category-dropdown{
+    font-size: 6px;
+    padding: 0;
+    width: 40px;
+  }
+}
+
+/* .container-fluid{
+  padding: 0 !important;
+} */
